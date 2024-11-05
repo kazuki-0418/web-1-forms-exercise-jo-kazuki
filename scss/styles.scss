@@ -11,4 +11,120 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 20px auto;
+  height: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  border: 1px solid #f4f4f4;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.form-group-label {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: white;
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+  z-index: 3;
+}
+
+.personal-info {
+  position: absolute;
+  top: 60px;
+}
+
+.preferences {
+  position: absolute;
+  top: 380px;
+}
+
+.contact-preferences {
+  position: absolute;
+  top: 632px;
+}
+
+.form-label {
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+input {
+  width: 100%;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #f4f4f4;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid #f4f4f4;
+}
+
+#name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: fit-content;
+  justify-content: flex-start;
+}
+
+.gender-preferences {
+  position: absolute;
+  top: 774px;
+}
+
+.radio-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+}
+
+.more-information {
+  position: absolute;
+  top: 944px;
+}
+
+.update-documents {
+  position: absolute;
+  top: 1144px;
+}
+
+.submission {
+  position: absolute;
+  top: 1240px;
+}
+
+.submission-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.submission-button input {
+  width: 80px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
 }

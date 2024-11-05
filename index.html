@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information Form</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
-        <!-- FORM FIELDS HERE -->
+
+
+        <div class="form-group ">
+            <div class="personal-info form-group-label">
+                <span>Personal Information</span>
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" required placeholder="Name">
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="password">Password:</label>
+                <input type="password" name="password" id="password" required placeholder="Password">
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="date">Date of Birth:</label>
+                <input type="date" name="date" id="date">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-control">
+                <div class="preferences form-group-label">
+                    <span>Preferences</span>
+                </div>
+                <label class="form-label" for="color">Favorite Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+
+            <div class="form-control">
+                <label class="form-label" for="hobby">Hobby</label>
+                <input list="Hobby" name="hobby" id="hobby">
+            </div>
+
+            <div class="form-control">
+                <label class="form-label" for="experience-level">Experience Level</label>
+                <input type="range" name="experience-level" id="experience-level" min="1" max="10">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="contact-preferences form-group-label">
+                <span>Contact Preferences</span>
+            </div>
+            <select name="Preferred Contact Method" id="Preferred Contact Method">
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="Mail">Mail</option>
+            </select>
+            <div class="form-control">
+                <label class="form-label" for="subscribe">Subscribe to Newsletter</label>
+                <input type="checkbox" name="subscribe" id="subscribe">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="gender-preferences form-group-label">
+                <span>
+                    Preferences
+                </span>
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="gender">Gender</label>
+                <div class="radio-option">
+                    <input type="radio" id="male" name="gender" value="male" checked />
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="more-information form-group-label">
+                <span>More Information</span>
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="bio">Bio</label>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="update-documents form-group-label">
+                <span>
+                    Update Documents
+                </span>
+            </div>
+            <div class="form-control">
+                <label for="documents">Resume and other certificates:</label>
+                <input type="file" name="Resume and other certificates" id="Resume and other certificates"
+                    accept=".doc, .docx, .pdf, .jpg, .png" multiple>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="submission form-group-label">
+                <span>
+                    Submission
+                </span>
+            </div>
+            <div class="submission-button">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+
+
     </form>
 </body>
+
 </html>
